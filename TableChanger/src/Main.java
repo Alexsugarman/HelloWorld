@@ -3,11 +3,13 @@ import java.lang.Math;
 
 public class Main 
 {
+	private static Scanner in;
+
 	public static void main(String[] args) 
 	{
 		int m = 0;
 		int n = 0;
-		Scanner in = new Scanner(System.in);
+		in = new Scanner(System.in);
 		System.out.print("Enter M: ");
 		m = in.nextInt();
 		System.out.println();
@@ -22,7 +24,7 @@ public class Main
 		{
 			for (j = 0; j < n; j++)
 			{
-				myTable[i][j] = (int)(Math.random()*10);
+				myTable[i][j] = (int)(Math.random()*10) + 1;
 				System.out.print(myTable[i][j] + " ");
 			}
 		System.out.println();
